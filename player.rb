@@ -18,13 +18,5 @@ class Player
       self.is_turn = true
     end
   end
-
-  def has_lost(lives)
-    if lives <= 0
-      Game.winner_prompt(@name)
-    else
-      Game.turn_prompt
-    end
-  end
   
 end

@@ -26,7 +26,7 @@ class Game
       player.lose_life
       
       if player.lives <= 0
-        
+
         if player == @p1
           player = @p2
         else
@@ -49,8 +49,8 @@ class Game
   end
 
   def winner_prompt player
-      puts "#{player.name} Wins! with a score of #{player.lives}/3"
-      puts "--- GAME OVER ---"
+    puts "#{player.name} Wins! with a score of #{player.lives}/3"
+    puts "--- GAME OVER ---"
   end
 
 end
